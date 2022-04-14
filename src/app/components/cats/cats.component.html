@@ -1,0 +1,25 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">
+                    #
+                </th>
+                <th scope="col">
+                    facts about Cats
+                </th>
+            </tr>
+            <tr *ngFor="let f of cats, let i = index">
+                <td>
+                    {{i+ 1}}
+                </td>
+                <td>
+                    {{f.text}}
+                    <br>
+                </td>
+            </tr>
+
+        </thead>
+        
+    </table>
+</div>
